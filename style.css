@@ -1,0 +1,109 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    height: 500px;
+}
+
+.offers{
+    background-color:#C4A4A7;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    height: 120px;
+    width:30px;
+    writing-mode: vertical-rl;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container{
+    grid-template-columns: 1fr;
+}
+
+.memorial-day-sale{
+    height: 40px;
+}
+
+.nav{
+    height: 80px;
+    }
+
+.hero{
+        height: 320px;
+        background-color: lightgray;
+    }
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-mobile{
+    display: none;
+}
+
+.main-item-img{
+    background-color: bisque;
+    height: 300px;
+}
+
+.item-text{
+    padding: 50px 50px;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-item{
+    padding: 30px;
+}
+
+/*? Utilities */
+.grid{
+    display: grid;
+}
+.text-transfor{
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.block-sale-footer{
+    background-color:#C4A4A7;
+    color: whitesmoke;
+}
+
+/*? media queries */
+@media (max-width: 768px) {
+    .main-container{
+        display: none;
+    }
+
+    .container-mobile{
+        display: block;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .main-item{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-footer{
+        display: block;
+    }
+}
